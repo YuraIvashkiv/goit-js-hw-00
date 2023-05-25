@@ -14,6 +14,7 @@ const createGalleryItem = (item) => {
   return gallery.insertAdjacentHTML('beforeend', galleryItem);
 };
 
+
 const renderGallery = (items) => {
     const galleryItems = items.map((item) => createGalleryItem(item));
     gallery.append(...galleryItems);
